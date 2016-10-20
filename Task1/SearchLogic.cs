@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task1
 {
-    public class Class1
+    public static class SearchLogic
     {
-        static int[] CreateArray(int lenth)
+        public static int[] CreateArray(int lenth)
         {
             Random rdm = new Random();
 
@@ -24,7 +20,7 @@ namespace Task1
             return mass;
         }
 
-        static int? BinarySearch(int[] array, int number)
+        public static int? BinarySearch(int[] array, int number)
         {
             System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
 
